@@ -53,6 +53,11 @@ Update device names:
 * `modules/wlan.ini`:`interface` - ^
 ___
 Select visible blocks in `modules.ini`
-
+___
+Add launch command when your WM starts. For example, for i3:
+```sh
+# ~/.config/i3/config
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+```
 
 
