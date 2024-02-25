@@ -1,5 +1,6 @@
 # Polybar gruvbox theme
 
+Simple and beautiful gruvbox dark theme for [polybar](https://github.com/polybar/polybar)
 
 ## Screenshots
 
@@ -21,28 +22,28 @@ Backup current config if exists
 ```sh
 mv ~/.config/polybar ~/.config/polybar.backup
 ```
+___
 
-Download this config
-
+Download this repo
 ```sh
-git clone --depth=1 https://github.com/emgyrz/polybar-gruvbox-theme.git ~/.config/plobar
+git clone --depth=1 https://github.com/emgyrz/polybar-gruvbox-theme.git ~/.config/polybar
 ```
+___
 
 Install fonts
 ```sh
-# JetBrains Mono
+# use your package manager to get JetBrains Mono
 best_package_manager install jetbrains-mono 
 
 # Material Icons (Round)
-mkdir ~/.fonts && cp -R ~/.config/polybar/fonts/MaterialIcons ~/.fonts/
-
+mkdir ~/.fonts && cp -R ~/.config/polybar/fonts/MaterialIcons ~/.fonts/ && fc-cache -f
 ```
 
 
 ## Configuration
 
 Read polybar [docs](https://github.com/polybar/polybar/wiki).
-
+___
 Update device names:
 
 * `modules/backlight.ini`:`card` - see available cars in `/sys/class/backlight/`
@@ -50,7 +51,7 @@ Update device names:
 * `modules/temperature.ini`:`zone-type` - see content of `/sys/class/thermal/thermal_zone*/type`
 * `modules/wired.ini`:`interface` - net device name can be found with command like `ifconfig`, `ip link` etc
 * `modules/wlan.ini`:`interface` - ^
-
+___
 Select visible blocks in `modules.ini`
 
 
